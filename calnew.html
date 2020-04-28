@@ -1,0 +1,60 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="calnew.css">
+		<link  rel="stylesheet" href="calnew.css">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+				<div class="main">
+					<P>calculator</P>
+			<table class="tab">
+			
+			<tr>
+					<form name="cal">
+			<input type="text"  name="textview" class="display" value="" disabled>
+						</form>
+				</tr>
+					<tr>
+					<td><input type="button" class="operator off darkgrey" id= "clear" value="AC" onclick="cal.textview.value =' '"></td>
+					<td><input type="button" class="operator off  darkgrey" id= "%" value="%" onclick="cal.textview.value =cal.textview.value/100"></td>
+				<td><input type="button" class="operator off darkgrey" id= "+/-" value="+/-"  onclick="cal.textview.value = -cal.textview.value"></td>
+					<td><input type="button" class="operator  on yellow" id= "/" value="&#247" onclick="cal.textview.value+='/'" ></td>
+						</tr>
+						<tr>
+							<td><input type="button" class="number on " value="7" onclick="cal.textview.value+='7'"></td>
+							<td><input type="button" class="number on " value="8" onclick="cal.textview.value+='8'"></td>
+							<td><input type="button" class="number on " value="9" onclick="cal.textview.value+='9'"></td>
+							<td><input type="button" class="operator on yellow" value="X" onclick="cal.textview.value+='*'"</td>
+						</tr>
+						<tr>
+							<td><input type="button" class="number on " value="4" onclick="cal.textview.value+='4'"></td>
+							<td><input type="button" class="number on " value="5" onclick="cal.textview.value+='5'"></td>
+							<td><input type="button" class="number on" value="6" onclick="cal.textview.value+='6'"></td>
+							<td><input type="button" class="operator on yellow" value="-" onclick="cal.textview.value+='-'"></td>
+						</tr>
+						<tr>
+							<td><input type="button" class="number on" value="1" onclick="cal.textview.value+='1'"></td>
+							<td><input type="button" class="number on" value="2" onclick="cal.textview.value+='2'"></td>
+							<td><input type="button" class="number on " value="3" onclick="cal.textview.value+='3'"></td>
+							<td><input type="button" class="operator on yellow" value="+" onclick="cal.textview.value+='+'"></td>
+						</tr>
+						<tr>
+							<td><input type="button" class="number on " value="0" onclick="cal.textview.value+='0'"></td>
+							<td><input type="button" class="decimal on " value="." onclick="cal.textview.value+='.'"></td>
+							<td><input type="button" class="backspace on " value="&#8592" onclick="cal.textview.value =cal.textview.value.substring(0,cal.textview.value.length*1 -1)"></td>
+							<td><input type="button" class="operator  on yellow" value="=" onclick="cal.textview.value =eval(cal.textview.value)"></td>
+						</tr>
+					</table>
+				</div>
+				<script src="jquery-3.5.0.min.js">
+    </script>
+    <script src="jquery-ui.js"></script>
+    
+				<script>
+					$( function() {
+    $( ".main" ).draggable();
+  } );
+		
+		</script></body>
+</html>

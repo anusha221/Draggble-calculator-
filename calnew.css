@@ -1,0 +1,84 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: white;
+}
+.main
+{
+   width:180px;
+	height:400px;
+	margin:0px;
+    align-items: center;
+    justify-content:center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+	position:relative;
+	border: 1px solid black;
+   
+
+}
+
+
+.operator, .number, .empty, .decimal, .backspace {
+	width: 40px;
+	height: 40px;
+position:relative;
+	float: left;
+	border-width: 0;
+	position:inherit;
+	font-weight: bold;
+	font-size: 20px;
+	cursor:pointer;
+	position:relative;
+	
+}
+.number, .empty{
+	background-color: #eaedef;
+	
+	
+}
+.display{
+	height:130px;
+		width:175px;
+	background-color: black;
+	color:white;
+	
+}
+table,tr,td,display
+{
+	border:1px solid black;
+	color:black;
+	width:40%;
+	height:auto;
+}
+.on:hover
+{
+	background-color: green;
+}
+.off:hover
+{
+	background-color: aliceblue;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 12px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+
+.yellow
+{
+	background-color: darkorange;
+	color:white;
+}
+.darkgrey
+{
+	background-color:darkgrey;
+}
+table
+{
+	border:1px solid black;
+	border-collapse: collapse;
+}
